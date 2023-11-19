@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container {
+    margin-left: 3%
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    width: 5%;
+    height: auto;
+    margin-right: 1%;
+}
+
+select {
+    appearance: none;
+    /* safari */
+    -webkit-appearance: none;
+    /* other styles for aesthetics */
+    width: 50vw;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.dropzones div {
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.dropzones p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.from-dropzone, .src-dropzone {
+    width: 30vw;
+    height: 15vh;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    border: 2px solid #000000;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.from-dropzone {
+    background-color: rgb(197, 110, 231);
+}
+
+.src-dropzone {
+    background-color: rgb(6, 182, 212);
+}
+
+.process {
+    transition: filter 0.3s ease;
+    margin-top: 3%;
+    background-color: rgb(93, 218, 139);
+    width: 30vw;
+    height: 6vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.src-dropzone:hover, .from-dropzone:hover, .process:hover {
+    filter: brightness(0.8);
+}
+
+.src-dropzone:active, .from-dropzone:active, .process:active {
+    filter: brightness(0.9);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ev3 Paster</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./lib/jszip.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title"><img src="img/favicon.png" alt="EV3 Logo">EVSpike Paster</h1>
+        <div class="description">
+            <h3 class="description">With this website, you can copy code from a project to another. You can select
+                either a ".lmsp" (ev3) or ".llsp3" (spike) file.<br>
+                The source code resides in <a href="https://github.com/OrigamingWasTaken/ev3paster">this github
+                    repo.</a>
+            </h3>
+        </div>
+        <select name="File Type" id="fileType">
+            <option value="lmsp">EV3 Classroom project (.lmsp)</option>
+            <option value="llsp3">Spike prime project (.llsp3)</option>
+        </select>
+        <div class="dropzones">
+            <p>Copy from...</p>
+            <div class="from-dropzone">From</div>
+            <p>To...</p>
+            <div class="src-dropzone">To</div>
+        </div>
+        <button class="process">Copy to file</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
